@@ -1,0 +1,217 @@
+﻿object FrameProductDetails: TFrameProductDetails
+  Size.Width = 360.000000000000000000
+  Size.Height = 640.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object layImageHeader: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 220.000000000000000000
+      Size.PlatformDefault = False
+      Margins.Left = 14.000000000000000000
+      Margins.Top = 12.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      object rectImageBg: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Stroke.Color = claGainsboro
+        Stroke.Thickness = 1.000000000000000000
+        XRadius = 14.000000000000000000
+        YRadius = 14.000000000000000000
+        Size.Width = 332.000000000000000000
+        Size.Height = 220.000000000000000000
+        Size.PlatformDefault = False
+        object imgProduct: TImage
+          Align = Client
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          WrapMode = Fit
+        end
+      end
+    end
+    object layMainInfo: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 180.000000000000000000
+      Size.PlatformDefault = False
+      Margins.Left = 14.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      object lblCategory: TLabel
+        Align = Top
+        Size.Width = 332.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'CATÉGORIE'
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claDarkslateblue
+      end
+      object lblName: TLabel
+        Align = Top
+        Size.Width = 332.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        Margins.Top = 2.000000000000000000
+        Text = 'Nom du produit'
+        TextSettings.Font.Size = 17.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claMidnightblue
+        TextSettings.WordWrap = True
+      end
+      object lblRef: TLabel
+        Align = Top
+        Size.Width = 332.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Référence : —'
+        TextSettings.Font.Size = 11.000000000000000000
+        TextSettings.FontColor = claSlategray
+      end
+      object lblBarcode: TLabel
+        Align = Top
+        Size.Width = 332.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Code-barres : —'
+        TextSettings.Font.Size = 11.000000000000000000
+        TextSettings.FontColor = claSlategray
+      end
+      object lblPrice: TLabel
+        Align = Top
+        Size.Width = 332.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        Margins.Top = 6.000000000000000000
+        Text = '0.00 DA'
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claDarkslateblue
+      end
+      object rectStockStatus: TRectangle
+        Align = Top
+        Size.Width = 332.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        Margins.Top = 6.000000000000000000
+        XRadius = 6.000000000000000000
+        YRadius = 6.000000000000000000
+        Stroke.Kind = None
+        Fill.Color = claHoneydew
+        object lblStockStatus: TLabel
+          Align = Client
+          Text = 'Disponibilité'
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claSeagreen
+          TextSettings.HorzAlign = Center
+          TextSettings.VertAlign = Center
+        end
+      end
+    end
+    object layActions: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Margins.Left = 14.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      object btnAddToCart: TButton
+        Align = Left
+        Size.Width = 125.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = '+ Panier'
+        OnClick = btnAddToCartClick
+      end
+      object btnCompare: TButton
+        Align = Left
+        Margins.Left = 8.000000000000000000
+        Size.Width = 95.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Comparer'
+        OnClick = btnCompareClick
+      end
+      object btnRequestQuote: TButton
+        Align = Client
+        Margins.Left = 8.000000000000000000
+        Size.Width = 96.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Devis'
+        OnClick = btnRequestQuoteClick
+      end
+    end
+    object layDescriptionSection: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 90.000000000000000000
+      Size.PlatformDefault = False
+      Margins.Left = 14.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      object lblDescTitle: TLabel
+        Align = Top
+        Size.Width = 332.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Description'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claMidnightblue
+      end
+      object lblDescription: TLabel
+        Align = Client
+        Margins.Top = 4.000000000000000000
+        Size.Width = 332.000000000000000000
+        Size.Height = 62.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Description détaillée...'
+        TextSettings.Font.Size = 12.000000000000000000
+        TextSettings.FontColor = claDarkslategray
+        TextSettings.WordWrap = True
+      end
+    end
+    object laySpecsSection: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 180.000000000000000000
+      Size.PlatformDefault = False
+      Margins.Left = 14.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      object lblSpecsTitle: TLabel
+        Align = Top
+        Size.Width = 332.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Caractéristiques techniques'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claMidnightblue
+      end
+      object mmoSpecs: TMemo
+        Align = Client
+        Margins.Top = 6.000000000000000000
+        Size.Width = 332.000000000000000000
+        Size.Height = 150.000000000000000000
+        Size.PlatformDefault = False
+        ReadOnly = True
+      end
+    end
+  end
+end

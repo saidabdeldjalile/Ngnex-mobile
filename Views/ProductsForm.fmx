@@ -1,0 +1,71 @@
+object FrameProducts: TFrameProducts
+  Size.Width = 360.000000000000000000
+  Size.Height = 640.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 360.000000000000000000
+    Viewport.Height = 640.000000000000000000
+    object layFilterHeader: TLayout
+      Align = Top
+      Margins.Left = 12.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 12.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 12.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 336.000000000000000000
+      Size.Height = 85.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object edtSearch: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        Size.Width = 336.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Rechercher par nom, r'#233'f'#233'rence ou code-barres'
+        OnChange = edtSearchChange
+      end
+      object cmbSort: TComboBox
+        Align = Left
+        Items.Strings = (
+          'Trier : nom (A '#224' Z)'
+          'Trier : prix croissant'
+          'Trier : prix d'#233'croissant'
+          'Trier : nouveaut'#233's')
+        Margins.Top = 6.000000000000000000
+        Position.Y = 42.000000000000000000
+        Size.Width = 160.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = cmbSortChange
+      end
+      object lblFilterStatus: TLabel
+        Align = Client
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 6.000000000000000000
+        Size.Width = 166.000000000000000000
+        Size.Height = 43.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 11.000000000000000000
+        TextSettings.Font.StyleExt = {00040000000200000004000000}
+        TextSettings.FontColor = claDarkgray
+        Text = 'Tous les produits'
+      end
+    end
+    object layProductsList: TLayout
+      Align = Top
+      Margins.Top = 4.000000000000000000
+      Position.Y = 105.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 520.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+end

@@ -1,0 +1,42 @@
+object FrameQuoteHistory: TFrameQuoteHistory
+  Size.Width = 360.000000000000000000
+  Size.Height = 640.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 360.000000000000000000
+    Viewport.Height = 640.000000000000000000
+    object layTitle: TLayout
+      Align = Top
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lblHeader: TLabel
+        Align = Client
+        Size.Width = 360.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 15.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claMidnightblue
+        Text = 'Historique des demandes de devis'
+      end
+    end
+    object layHistoryList: TLayout
+      Align = Top
+      Margins.Top = 8.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 550.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+end

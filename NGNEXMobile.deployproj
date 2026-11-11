@@ -1,0 +1,2022 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup>
+        <DeviceId Condition="'$(Platform)'=='Android'"/>
+        <DeviceId Condition="'$(Platform)'=='Android64'"/>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
+        <DeviceId Condition="'$(Platform)'=='iOSSimARM64'"/>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSX64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win32'"/>
+    <ItemGroup Condition="'$(Platform)'=='Android64'">
+        <DeployFile Include="Assets\Images\catalog_product_044.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_044.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_069.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_069.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_004.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_004.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_030.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_030.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_010.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_010.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-large\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage640</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_015.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_015.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_028.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_028.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_003.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_003.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_053.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_053.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_046.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_046.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_019.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_019.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_006.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_006.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_079.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_079.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\mips\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\library\lib\mips\</RemoteDir>
+            <RemoteName>libNGNEXMobile.so</RemoteName>
+            <DeployClass>AndroidLibnativeMipsFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_011.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_011.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_071.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_071.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_041.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_041.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_064.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_064.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_029.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_029.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_009.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_009.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi-v7a\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\library\lib\armeabi-v7a\</RemoteDir>
+            <RemoteName>libNGNEXMobile.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiv7aFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_052.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_052.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_076.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_076.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-ldpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_017.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_017.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_073.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_073.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_scale.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>cat_scale.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_drawer.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>cat_drawer.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_002.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_002.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_063.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_063.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\styles.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\values\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStyles</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_026.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_026.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\hero_commerce.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>hero_commerce.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_prt.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>cat_prt.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_045.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_045.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_035.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_035.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_025.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_025.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_drawer_410.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>prod_drawer_410.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_005.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_005.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\action_compare.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>action_compare.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_056.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_056.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_prt_bt.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>prod_prt_bt.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_040.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_040.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_013.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_013.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_008.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_008.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_077.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_077.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_043.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_043.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_027.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_027.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_039.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_039.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_074.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_074.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_054.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_054.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_031.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_031.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_prt_lan.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>prod_prt_lan.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_scale_30.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>prod_scale_30.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\action_scanner.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>action_scanner.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\banner_pos.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>banner_pos.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\styles-v35.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\values-v35\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStylesV35</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_012.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_012.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_049.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_049.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_047.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_047.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_033.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_033.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_023.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_023.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_007.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_007.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\AndroidManifest.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\</RemoteDir>
+            <RemoteName>AndroidManifest.xml</RemoteName>
+            <DeployClass>ProjectAndroidManifest</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_058.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_058.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_192x192.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-xxxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon192</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_078.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_078.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_042.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_042.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\colors-night-v21.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\values-night-v21\</RemoteDir>
+            <RemoteName>colors.xml</RemoteName>
+            <DeployClass>Android_ColorsDark</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_055.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_055.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\library\lib\armeabi\</RemoteDir>
+            <RemoteName>libNGNEXMobile.so</RemoteName>
+            <DeployClass>AndroidLibnativeArmeabiFile</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_060.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_060.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\action_quote.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>action_quote.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_072.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_072.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\colors.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\values\</RemoteDir>
+            <RemoteName>colors.xml</RemoteName>
+            <DeployClass>Android_Colors</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_048.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_048.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\splash_image_def.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable\</RemoteDir>
+            <RemoteName>splash_image_def.xml</RemoteName>
+            <DeployClass>AndroidSplashImageDef</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_scan_wl.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>prod_scan_wl.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_062.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_062.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-xhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon96</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\logo_ngnex.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>logo_ngnex.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\action_calc.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>action_calc.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_061.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_061.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_024.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_024.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_aio_dual.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>prod_aio_dual.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_036.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_036.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_scan.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>cat_scan.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-xlarge\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_038.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_038.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_018.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_018.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_057.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_057.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\logo_wordmark.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>logo_wordmark.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_066.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_066.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_070.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_070.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_050.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_050.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_075.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_075.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_065.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_065.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-small\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage426</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_aio_pro.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>prod_aio_pro.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_020.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_020.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_032.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_032.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\strings.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\values\</RemoteDir>
+            <RemoteName>strings.xml</RemoteName>
+            <DeployClass>Android_Strings</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_016.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_016.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\styles-v21.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\values-v21\</RemoteDir>
+            <RemoteName>styles.xml</RemoteName>
+            <DeployClass>AndroidSplashStylesV21</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Android64\Debug\libNGNEXMobile.so" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\library\lib\arm64-v8a\</RemoteDir>
+            <RemoteName>libNGNEXMobile.so</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_067.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_067.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_068.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_068.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_037.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_037.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_scan_desk.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>prod_scan_desk.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_022.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_022.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_034.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_034.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_059.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_059.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_014.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_014.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_aio.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>cat_aio.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_470x320.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\res\drawable-normal\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage470</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_021.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_021.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_001.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_001.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_051.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\assets\internal\</RemoteDir>
+            <RemoteName>catalog_product_051.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Android'"/>
+    <ItemGroup Condition="'$(Platform)'=='OSXARM64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="Assets\Images\catalog_product_044.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_044.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_069.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_069.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_004.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_004.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_030.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_030.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_010.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_010.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_015.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_015.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_028.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_028.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_003.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_003.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_053.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_053.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_046.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_046.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_019.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_019.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_006.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_006.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_079.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_079.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_011.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_011.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_071.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_071.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_041.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_041.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_064.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_064.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_029.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_029.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_009.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_009.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_052.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_052.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_076.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_076.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_017.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_017.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_073.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_073.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_scale.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>cat_scale.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_drawer.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>cat_drawer.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_002.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_002.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_063.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_063.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_026.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_026.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\hero_commerce.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>hero_commerce.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_prt.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>cat_prt.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_045.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_045.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_035.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_035.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_025.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_025.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_drawer_410.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>prod_drawer_410.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_005.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_005.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\action_compare.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>action_compare.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_056.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_056.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_prt_bt.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>prod_prt_bt.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_040.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_040.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_013.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_013.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_008.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_008.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_077.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_077.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_043.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_043.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_027.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_027.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_039.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_039.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_074.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_074.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_054.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_054.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_031.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_031.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_prt_lan.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>prod_prt_lan.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_scale_30.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>prod_scale_30.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\action_scanner.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>action_scanner.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\banner_pos.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>banner_pos.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_012.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_012.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_049.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_049.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_047.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_047.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_033.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_033.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_023.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_023.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_007.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_007.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_058.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_058.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_078.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_078.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_042.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_042.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_055.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_055.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_060.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_060.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\action_quote.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>action_quote.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_072.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_072.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_048.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_048.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_scan_wl.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>prod_scan_wl.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_062.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_062.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\logo_ngnex.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>logo_ngnex.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\action_calc.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>action_calc.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_061.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_061.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_024.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_024.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_aio_dual.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>prod_aio_dual.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_036.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_036.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_scan.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>cat_scan.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_038.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_038.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_018.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_018.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_057.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_057.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\logo_wordmark.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>logo_wordmark.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_066.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_066.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_070.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_070.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_050.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_050.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_075.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_075.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_065.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_065.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_aio_pro.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>prod_aio_pro.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_020.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_020.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_032.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_032.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_016.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_016.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_067.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_067.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_068.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_068.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_037.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_037.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\prod_scan_desk.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>prod_scan_desk.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_022.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_022.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_034.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_034.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_059.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_059.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_014.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_014.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\cat_aio.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>cat_aio.png</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_021.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_021.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_001.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_001.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Assets\Images\catalog_product_051.jpg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>NGNEXMobile\Assets\Images\</RemoteDir>
+            <RemoteName>catalog_product_051.jpg</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimARM64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win64x'"/>
+</Project>

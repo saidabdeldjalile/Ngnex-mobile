@@ -1,0 +1,419 @@
+object FrameHome: TFrameHome
+  Size.Width = 360.000000000000000000
+  Size.Height = 640.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 360.000000000000000000
+    Viewport.Height = 640.000000000000000000
+    object layHeaderBanner: TLayout
+      Align = Top
+      Margins.Left = 12.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 12.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 168.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object rectBanner: TRectangle
+        Align = Client
+        Fill.Color = claMidnightblue
+        Size.Width = 360.000000000000000000
+        Size.Height = 168.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 14.000000000000000000
+        YRadius = 14.000000000000000000
+        object imgBanner: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Align = Contents
+          HitTest = False
+          Size.Width = 360.000000000000000000
+          Size.Height = 168.000000000000000000
+          Size.PlatformDefault = False
+          WrapMode = Stretch
+        end
+        object rectBannerOverlay: TRectangle
+          Align = Contents
+          Fill.Color = claDarkslategray
+          HitTest = False
+          Opacity = 0.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 168.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+        object lblBannerBadge: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Left = 14.000000000000000000
+          Margins.Top = 12.000000000000000000
+          Margins.Right = 14.000000000000000000
+          Size.Width = 308.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claSandybrown
+          Text = 'NGNEX 08  '#8226'  SOLUTIONS POS & CAISSE'
+          Visible = False
+        end
+        object lblBannerTitle: TLabel
+          Align = Top
+          StyledSettings = []
+          Margins.Left = 14.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 14.000000000000000000
+          Size.Width = 308.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.FontColor = claWhite
+          Text = #201'quipez votre commerce'
+          Visible = False
+        end
+        object lblBannerSubtitle: TLabel
+          Align = Client
+          StyledSettings = []
+          Margins.Left = 14.000000000000000000
+          Margins.Right = 14.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Size.Width = 308.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.FontColor = claWhite
+          Text = 
+            'Terminaux tactiles, imprimantes de tickets, scanners et balances' +
+            '.'
+          Visible = False
+        end
+        object btnBannerExplore: TButton
+          Align = Bottom
+          Margins.Left = 14.000000000000000000
+          Margins.Right = 180.000000000000000000
+          Margins.Bottom = 12.000000000000000000
+          Size.Width = 142.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Voir le catalogue  '#8250
+          Visible = False
+          OnClick = btnAllCategoriesClick
+        end
+      end
+    end
+    object laySearch: TLayout
+      Align = Top
+      Margins.Left = 12.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 12.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 52.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object rectSearchBg: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Size.Width = 360.000000000000000000
+        Size.Height = 52.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claGainsboro
+        XRadius = 12.000000000000000000
+        YRadius = 12.000000000000000000
+        object edtSearchHome: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 6.000000000000000000
+          Margins.Right = 95.000000000000000000
+          Margins.Bottom = 6.000000000000000000
+          Size.Width = 162.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Rechercher un produit'
+        end
+        object rectSearchBtn: TRectangle
+          Align = Right
+          Fill.Color = claRoyalblue
+          Margins.Top = 6.000000000000000000
+          Margins.Right = 6.000000000000000000
+          Margins.Bottom = 6.000000000000000000
+          Position.X = 269.000000000000000000
+          Position.Y = 6.000000000000000000
+          Size.Width = 85.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = btnSearchHomeClick
+          object lblSearchBtn: TLabel
+            Align = Client
+            HitTest = False
+            StyledSettings = []
+            Size.Width = 85.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 11.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            TextSettings.VertAlign = Center
+            Text = 'Rechercher'
+          end
+        end
+      end
+    end
+    object layCategoriesHeader: TLayout
+      Align = Top
+      Margins.Left = 14.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lblCatTitle: TLabel
+        Align = Left
+        Size.Width = 220.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claMidnightblue
+        Text = 'Nos cat'#233'gories'
+      end
+      object btnAllCategories: TSpeedButton
+        Align = Right
+        Position.X = 260.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Tout voir  '#8250
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claDarkslateblue
+        OnClick = btnAllCategoriesClick
+      end
+    end
+    object horzCategoriesScroll: THorzScrollBox
+      Align = Top
+      Margins.Left = 12.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 12.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 166.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Viewport.Width = 360.000000000000000000
+      Viewport.Height = 166.000000000000000000
+    end
+    object layQuickActions: TLayout
+      Align = Top
+      Margins.Left = 12.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 12.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object lblQuickActionsTitle: TLabel
+        Align = Top
+        Size.Width = 360.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claMidnightblue
+        Text = 'Outils et services'
+      end
+      object gridQuickActions: TGridPanelLayout
+        Align = Client
+        Size.Width = 360.000000000000000000
+        Size.Height = 117.000000000000000000
+        Size.PlatformDefault = False
+        ColumnCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = rectBtnScanner
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = rectBtnCompare
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = rectBtnCalc
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = rectBtnQuotesHistory
+            Row = 1
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object rectBtnScanner: TRectangle
+          Align = Client
+          Fill.Color = claAliceblue
+          Margins.Left = 4.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Size.Width = 172.000000000000000000
+          Size.Height = 50.500000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claPowderblue
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = rectBtnScannerClick
+          object lblBtnScanner: TLabel
+            Align = Client
+            StyledSettings = []
+            Size.Width = 172.000000000000000000
+            Size.Height = 50.500000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 11.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claTeal
+            TextSettings.HorzAlign = Center
+            Text = 'Scanner un code-barres'
+          end
+        end
+        object rectBtnCompare: TRectangle
+          Align = Client
+          Fill.Color = claLavender
+          Margins.Left = 4.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Size.Width = 172.000000000000000000
+          Size.Height = 50.500000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claLavender
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = rectBtnCompareClick
+          object lblBtnCompare: TLabel
+            Align = Client
+            StyledSettings = []
+            Size.Width = 172.000000000000000000
+            Size.Height = 50.500000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 11.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claBlueviolet
+            TextSettings.HorzAlign = Center
+            Text = 'Comparer des produits'
+          end
+        end
+        object rectBtnCalc: TRectangle
+          Align = Client
+          Fill.Color = claLemonchiffon
+          Margins.Left = 4.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Size.Width = 172.000000000000000000
+          Size.Height = 50.500000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claKhaki
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = rectBtnCalcClick
+          object lblBtnCalc: TLabel
+            Align = Client
+            StyledSettings = []
+            Size.Width = 172.000000000000000000
+            Size.Height = 50.500000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 11.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claDarkgoldenrod
+            TextSettings.HorzAlign = Center
+            Text = 'Calculer une remise'
+          end
+        end
+        object rectBtnQuotesHistory: TRectangle
+          Align = Client
+          Fill.Color = claHoneydew
+          Margins.Left = 4.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Size.Width = 172.000000000000000000
+          Size.Height = 50.500000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claPaleturquoise
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = rectBtnQuotesHistoryClick
+          object lblBtnQuotesHistory: TLabel
+            Align = Client
+            StyledSettings = []
+            Size.Width = 172.000000000000000000
+            Size.Height = 50.500000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 11.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claSeagreen
+            TextSettings.HorzAlign = Center
+            Text = 'Historique des devis'
+          end
+        end
+      end
+    end
+    object layPopularHeader: TLayout
+      Align = Top
+      Margins.Left = 14.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      object lblPopularTitle: TLabel
+        Align = Left
+        Size.Width = 250.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claMidnightblue
+        Text = #192' d'#233'couvrir en images'
+      end
+    end
+    object layPopularContainer: TLayout
+      Align = Top
+      Margins.Top = 4.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+    end
+  end
+end

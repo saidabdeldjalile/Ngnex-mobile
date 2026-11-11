@@ -1,0 +1,27 @@
+# Delphi build output
+/Android64/
+/Win64/
+__history/
+__recovery/
+*.dcu
+*.o
+*.so
+*.identcache
+*.local
+*.dsk
+*.projdata
+*.log
+*.~*
+*.bak
+*.tmp
+*.old.xml
+
+# IDE metadata
+/.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Local API data
+/api/data/

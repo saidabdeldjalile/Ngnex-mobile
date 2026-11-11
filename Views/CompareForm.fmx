@@ -1,0 +1,320 @@
+object FrameCompare: TFrameCompare
+  Size.Width = 360.000000000000000000
+  Size.Height = 640.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 344.000000000000000000
+    Viewport.Height = 640.000000000000000000
+    object layTitle: TLayout
+      Align = Top
+      Margins.Left = 14.000000000000000000
+      Margins.Top = 14.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 14.000000000000000000
+      Size.Width = 316.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lblHeader: TLabel
+        Align = Client
+        Size.Width = 316.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claMidnightblue
+        Text = 'Comparer des produits'
+      end
+    end
+    object laySelectors: TLayout
+      Align = Top
+      Margins.Left = 14.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 62.000000000000000000
+      Size.Width = 316.000000000000000000
+      Size.Height = 115.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object cmbProd1: TComboBox
+        Align = Top
+        Size.Width = 316.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object cmbProd2: TComboBox
+        Align = Top
+        Margins.Top = 6.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 316.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object btnCompare: TButton
+        Align = Top
+        Margins.Top = 6.000000000000000000
+        Position.Y = 80.000000000000000000
+        Size.Width = 316.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Comparer'
+        OnClick = btnCompareClick
+      end
+    end
+    object layImagesCompare: TGridPanelLayout
+      Align = Top
+      Margins.Left = 14.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 187.000000000000000000
+      Size.Width = 316.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      ColumnCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = imgCompareP1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = imgCompareP2
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      object imgCompareP1: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Margins.Right = 4.000000000000000000
+        Size.Width = 154.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object imgCompareP2: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Margins.Left = 4.000000000000000000
+        Size.Width = 154.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object layResultGrid: TGridPanelLayout
+      Align = Top
+      Margins.Left = 14.000000000000000000
+      Margins.Right = 14.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 295.000000000000000000
+      Size.Width = 316.000000000000000000
+      Size.Height = 420.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      ColumnCollection = <
+        item
+          Value = 50.000000000000000000
+        end
+        item
+          Value = 50.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = lblHeaderP1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = lblHeaderP2
+          Row = 0
+        end
+        item
+          Column = 0
+          Control = lblPriceP1
+          Row = 1
+        end
+        item
+          Column = 1
+          Control = lblPriceP2
+          Row = 1
+        end
+        item
+          Column = 0
+          Control = lblRefP1
+          Row = 2
+        end
+        item
+          Column = 1
+          Control = lblRefP2
+          Row = 2
+        end
+        item
+          Column = 0
+          Control = lblStockP1
+          Row = 3
+        end
+        item
+          Column = 1
+          Control = lblStockP2
+          Row = 3
+        end
+        item
+          Column = 0
+          Control = mmoSpecsP1
+          Row = 4
+        end
+        item
+          Column = 1
+          Control = mmoSpecsP2
+          Row = 4
+        end>
+      RowCollection = <
+        item
+          Value = 12.000000000000000000
+        end
+        item
+          Value = 10.000000000000000000
+        end
+        item
+          Value = 10.000000000000000000
+        end
+        item
+          Value = 10.000000000000000000
+        end
+        item
+          Value = 58.000000000000000000
+        end>
+      object lblHeaderP1: TLabel
+        Align = Client
+        Size.Width = 158.000000000000000000
+        Size.Height = 50.400001525878910000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claMidnightblue
+        TextSettings.HorzAlign = Center
+        Text = 'Produit A'
+      end
+      object lblHeaderP2: TLabel
+        Align = Client
+        Size.Width = 158.000000000000000000
+        Size.Height = 50.400001525878910000
+        Size.PlatformDefault = False
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claMidnightblue
+        TextSettings.HorzAlign = Center
+        Text = 'Produit B'
+      end
+      object lblPriceP1: TLabel
+        Align = Client
+        Size.Width = 158.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claDarkslateblue
+        TextSettings.HorzAlign = Center
+        Text = '0.00 DA'
+      end
+      object lblPriceP2: TLabel
+        Align = Client
+        Size.Width = 158.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claDarkslateblue
+        TextSettings.HorzAlign = Center
+        Text = '0.00 DA'
+      end
+      object lblRefP1: TLabel
+        Align = Client
+        Size.Width = 158.000000000000000000
+        Size.Height = 41.999992370605470000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claSlategray
+        TextSettings.HorzAlign = Center
+        Text = 'R'#233'f. : '#8212
+      end
+      object lblRefP2: TLabel
+        Align = Client
+        Size.Width = 158.000000000000000000
+        Size.Height = 41.999992370605470000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claSlategray
+        TextSettings.HorzAlign = Center
+        Text = 'R'#233'f. : '#8212
+      end
+      object lblStockP1: TLabel
+        Align = Client
+        Size.Width = 158.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claSeagreen
+        TextSettings.HorzAlign = Center
+        Text = 'Stock : '#8212
+      end
+      object lblStockP2: TLabel
+        Align = Client
+        Size.Width = 158.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claSeagreen
+        TextSettings.HorzAlign = Center
+        Text = 'Stock : '#8212
+      end
+      object mmoSpecsP1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        ReadOnly = True
+        Align = Client
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Size.Width = 154.000000000000000000
+        Size.Height = 235.600006103515600000
+        Size.PlatformDefault = False
+        Viewport.Width = 150.000000000000000000
+        Viewport.Height = 231.600000000000000000
+      end
+      object mmoSpecsP2: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        ReadOnly = True
+        Align = Client
+        Margins.Left = 4.000000000000000000
+        Margins.Bottom = 8.000000000000000000
+        Size.Width = 154.000000000000000000
+        Size.Height = 235.600006103515600000
+        Size.PlatformDefault = False
+        Viewport.Width = 150.000000000000000000
+        Viewport.Height = 231.600000000000000000
+      end
+    end
+  end
+end

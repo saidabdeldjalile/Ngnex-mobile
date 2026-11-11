@@ -1,0 +1,148 @@
+object FrameScanner: TFrameScanner
+  Size.Width = 360.000000000000000000
+  Size.Height = 640.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 360.000000000000000000
+    Viewport.Height = 640.000000000000000000
+    object layTitle: TLayout
+      Align = Top
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 328.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lblHeader: TLabel
+        Align = Client
+        Size.Width = 328.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claMidnightblue
+        Text = 'Scanner un code-barres'
+      end
+    end
+    object rectCameraBox: TRectangle
+      Align = Top
+      Fill.Color = claBlack
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 12.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 68.000000000000000000
+      Size.Width = 328.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claWhite
+      Stroke.Thickness = 2.000000000000000000
+      XRadius = 12.000000000000000000
+      YRadius = 12.000000000000000000
+      object lblCameraHint: TLabel
+        Align = Client
+        Size.Width = 328.000000000000000000
+        Size.Height = 200.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 
+          'Placez le code-barres dans la zone de lecture (EAN-13 ou Code 12' +
+          '8).'
+      end
+    end
+    object btnStartCamera: TButton
+      Align = Top
+      Margins.Left = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 280.000000000000000000
+      Size.Width = 328.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Activer la cam'#233'ra'
+      OnClick = btnStartCameraClick
+    end
+    object btnStopCamera: TButton
+      Align = Top
+      Margins.Left = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 332.000000000000000000
+      Size.Width = 328.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Arr'#234'ter la cam'#233'ra'
+      OnClick = btnStopCameraClick
+    end
+    object layManualInput: TLayout
+      Align = Top
+      Margins.Left = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 384.000000000000000000
+      Size.Width = 328.000000000000000000
+      Size.Height = 130.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      object lblManualTitle: TLabel
+        Align = Top
+        Size.Width = 328.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        Text = 'Saisie manuelle'
+      end
+      object edtBarcodeManual: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        Position.Y = 30.000000000000000000
+        Margins.Top = 6.000000000000000000
+        Size.Width = 328.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Saisir un code-barres ou une r'#233'f'#233'rence'
+      end
+      object btnSearchManual: TButton
+        Align = Top
+        Margins.Top = 8.000000000000000000
+        Position.Y = 76.000000000000000000
+        Size.Width = 328.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Rechercher le produit'
+        OnClick = btnSearchManualClick
+      end
+    end
+    object lblStatus: TLabel
+      Align = Top
+      Margins.Left = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 530.000000000000000000
+      Size.Width = 328.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00040000000200000004000000}
+      TextSettings.FontColor = claDarkgray
+      TextSettings.HorzAlign = Center
+      Text = 'Pr'#234't '#224' scanner'
+      TabOrder = 5
+    end
+  end
+end

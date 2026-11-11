@@ -1,0 +1,143 @@
+﻿object FrameCart: TFrameCart
+  Size.Width = 360.000000000000000000
+  Size.Height = 640.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object layTitle: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      object lblHeader: TLabel
+        Align = Client
+        Text = 'Votre panier'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claMidnightblue
+      end
+    end
+    object layCartItemsList: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 360.000000000000000000
+      Size.PlatformDefault = False
+      Margins.Top = 8.000000000000000000
+    end
+    object laySummaryBox: TLayout
+      Align = Top
+      Size.Width = 360.000000000000000000
+      Size.Height = 180.000000000000000000
+      Size.PlatformDefault = False
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 12.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 16.000000000000000000
+      object rectSummaryBg: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Stroke.Color = claGainsboro
+        Stroke.Thickness = 1.000000000000000000
+        XRadius = 10.000000000000000000
+        YRadius = 10.000000000000000000
+        Size.Width = 328.000000000000000000
+        Size.Height = 180.000000000000000000
+        Size.PlatformDefault = False
+        object lblGrandTotalLabel: TLabel
+          Align = Top
+          Size.Width = 304.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Text = 'Montant total estimé'
+          TextSettings.Font.Size = 12.000000000000000000
+        end
+        object lblGrandTotalValue: TLabel
+          Align = Top
+          Size.Width = 304.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          Margins.Left = 12.000000000000000000
+          Text = '0.00 DA'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claMidnightblue
+        end
+        object lblTotalQtyValue: TLabel
+          Align = Top
+          Size.Width = 304.000000000000000000
+          Size.Height = 20.000000000000000000
+          Size.PlatformDefault = False
+          Margins.Left = 12.000000000000000000
+          Text = '0 article(s)'
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.FontColor = claDarkgray
+        end
+        object rectRequestQuote: TRectangle
+          Align = Top
+          Fill.Color = claRoyalblue
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = btnRequestQuoteClick
+          object lblRequestQuote: TLabel
+            Align = Client
+            HitTest = False
+            StyledSettings = []
+            Size.Width = 304.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 13.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            TextSettings.VertAlign = Center
+            Text = 'Demander un devis'
+          end
+        end
+        object rectClearCart: TRectangle
+          Align = Top
+          Fill.Color = claWhite
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 6.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Size.Width = 304.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claGainsboro
+          Stroke.Thickness = 1.000000000000000000
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          OnClick = btnClearCartClick
+          object lblClearCart: TLabel
+            Align = Client
+            HitTest = False
+            StyledSettings = []
+            Size.Width = 304.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 11.000000000000000000
+            TextSettings.FontColor = claDimGray
+            TextSettings.HorzAlign = Center
+            TextSettings.VertAlign = Center
+            Text = 'Vider le panier'
+          end
+        end
+      end
+    end
+  end
+end

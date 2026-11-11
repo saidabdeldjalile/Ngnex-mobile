@@ -1,0 +1,266 @@
+﻿object FrameQuote: TFrameQuote
+  Size.Width = 360.000000000000000000
+  Size.Height = 640.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 640.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 360.000000000000000000
+    Viewport.Height = 640.000000000000000000
+    object layTitle: TLayout
+      Align = Top
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lblHeader: TLabel
+        Align = Client
+        Size.Width = 360.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.FontColor = claMidnightblue
+        Text = 'Demander un devis'
+      end
+    end
+    object layCartSummary: TLayout
+      Align = Top
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 8.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 76.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object rectSummaryCard: TRectangle
+        Align = Client
+        Fill.Color = claAliceblue
+        HitTest = False
+        Size.Width = 360.000000000000000000
+        Size.Height = 76.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 12.000000000000000000
+        YRadius = 12.000000000000000000
+      end
+      object lblSummaryTitle: TLabel
+        Align = Top
+        Margins.Left = 12.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 12.000000000000000000
+        Size.Width = 336.000000000000000000
+        Size.Height = 20.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 11.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claSlategray
+        Text = 'Récapitulatif de la commande'
+      end
+      object lblItemsCount: TLabel
+        Align = Top
+        Margins.Left = 12.000000000000000000
+        Margins.Right = 12.000000000000000000
+        Size.Width = 336.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 10.000000000000000000
+        TextSettings.FontColor = claSlategray
+        Text = '0 article(s)'
+      end
+      object lblTotalAmount: TLabel
+        Align = Top
+        Margins.Left = 12.000000000000000000
+        Margins.Right = 12.000000000000000000
+        Size.Width = 336.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claRoyalblue
+        Text = 'Montant : 0,00 DA'
+      end
+    end
+    object layCustomerForm: TLayout
+      Align = Top
+      Margins.Left = 16.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 360.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lblFullName: TLabel
+        Align = Top
+        Size.Width = 360.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nom et prénom *'
+      end
+      object edtFullName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        Position.Y = 18.000000000000000000
+        Margins.Bottom = 6.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Ex. : Mohamed Amine'
+      end
+      object lblCompanyName: TLabel
+        Align = Top
+        Position.Y = 60.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nom de l’entreprise (facultatif)'
+      end
+      object edtCompanyName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        Position.Y = 78.000000000000000000
+        Margins.Bottom = 6.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Ex. : SARL Ngnex Market'
+      end
+      object lblPhone: TLabel
+        Align = Top
+        Position.Y = 120.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Téléphone *'
+      end
+      object edtPhone: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        Position.Y = 138.000000000000000000
+        Margins.Bottom = 6.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Ex. : 0550 12 34 56'
+      end
+      object lblEmail: TLabel
+        Align = Top
+        Position.Y = 180.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Adresse e-mail (facultatif)'
+      end
+      object edtEmail: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        Position.Y = 198.000000000000000000
+        Margins.Bottom = 6.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Ex. : contact@entreprise.dz'
+      end
+      object lblAddress: TLabel
+        Align = Top
+        Position.Y = 240.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Adresse de livraison'
+      end
+      object edtAddress: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        Position.Y = 258.000000000000000000
+        Margins.Bottom = 6.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Ex. : Béchar ou Alger'
+      end
+      object lblNotes: TLabel
+        Align = Top
+        Position.Y = 300.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 18.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Message complémentaire'
+      end
+      object mmoNotes: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Top
+        Position.Y = 318.000000000000000000
+        Size.Width = 360.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        Viewport.Width = 360.000000000000000000
+        Viewport.Height = 60.000000000000000000
+      end
+    end
+    object rectSubmitQuote: TRectangle
+      Align = Top
+      Fill.Color = claRoyalblue
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 12.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 8.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      OnClick = btnSubmitQuoteClick
+      object lblSubmitQuote: TLabel
+        Align = Client
+        HitTest = False
+        StyledSettings = []
+        Size.Width = 360.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 13.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Center
+        Text = 'Envoyer la demande de devis'
+      end
+    end
+    object rectBackHome: TRectangle
+      Align = Top
+      Fill.Color = claWhite
+      Margins.Left = 16.000000000000000000
+      Margins.Top = 0.000000000000000000
+      Margins.Right = 16.000000000000000000
+      Margins.Bottom = 30.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 42.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claGainsboro
+      Stroke.Thickness = 1.000000000000000000
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      OnClick = btnBackHomeClick
+      object lblBackHome: TLabel
+        Align = Client
+        HitTest = False
+        StyledSettings = []
+        Size.Width = 360.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 11.000000000000000000
+        TextSettings.FontColor = claDimGray
+        TextSettings.HorzAlign = Center
+        TextSettings.VertAlign = Center
+        Text = 'Retour à l’accueil'
+      end
+    end
+  end
+end

@@ -1,0 +1,240 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  Caption = 'NGNEX Mobile'
+  ClientHeight = 720
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 3
+  object tbHeader: TLayout
+    Align = Top
+    Size.Width = 360.000000000000000000
+    Size.Height = 58.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object rectHeaderBackground: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      HitTest = False
+      Size.Width = 124.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object btnBack: TSpeedButton
+      Align = Left
+      Size.Width = 44.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Text = #8249
+      TextSettings.Font.Size = 22.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claMidnightblue
+      Visible = False
+      OnClick = btnBackClick
+    end
+    object rectHeaderBrand: TRectangle
+      Align = Left
+      Fill.Color = claWhite
+      HitTest = False
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 7.000000000000000000
+      Margins.Right = 4.000000000000000000
+      Margins.Bottom = 7.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 112.000000000000000000
+      Size.Height = 43.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+      object imgHeaderLogo: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        HitTest = False
+        Margins.Left = 7.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 7.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 98.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object lblHeaderTitle: TLabel
+      Align = Client
+      Margins.Left = 8.000000000000000000
+      Size.Width = 116.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 15.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claMidnightblue
+      Text = 'NGNEX 08 POS'
+    end
+    object btnSettingsHeader: TSpeedButton
+      Align = Right
+      Position.X = 248.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 52.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Text = #9881
+      TextSettings.Font.Size = 19.000000000000000000
+      TextSettings.FontColor = claMidnightblue
+      OnClick = btnSettingsHeaderClick
+    end
+    object btnCartHeader: TSpeedButton
+      Align = Right
+      Position.X = 300.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Text = #55357#57042
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claDarkorange
+      OnClick = btnCartHeaderClick
+    end
+    object rectHeaderDivider: TRectangle
+      Align = Bottom
+      Fill.Color = claGainsboro
+      HitTest = False
+      Position.Y = 57.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+  end
+  object rectBottomNav: TRectangle
+    Align = Bottom
+    Fill.Color = claWhite
+    Position.Y = 660.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = claGainsboro
+    object gridNavButtons: TGridPanelLayout
+      Align = Client
+      Size.Width = 360.000000000000000000
+      Size.Height = 59.000000000000000000
+      Size.PlatformDefault = False
+      ColumnCollection = <
+        item
+          Value = 20.000000000000000000
+        end
+        item
+          Value = 20.000000000000000000
+        end
+        item
+          Value = 20.000000000000000000
+        end
+        item
+          Value = 20.000000000000000000
+        end
+        item
+          Value = 20.000000000000000000
+        end>
+      ControlCollection = <
+        item
+          Column = 0
+          Control = btnTabHome
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = btnTabProducts
+          Row = 0
+        end
+        item
+          Column = 2
+          Control = btnTabScanner
+          Row = 0
+        end
+        item
+          Column = 3
+          Control = btnTabCart
+          Row = 0
+        end
+        item
+          Column = 4
+          Control = btnTabQuote
+          Row = 0
+        end>
+      RowCollection = <
+        item
+          Value = 100.000000000000000000
+        end>
+      object btnTabHome: TSpeedButton
+        Align = Client
+        Size.Width = 72.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Accueil'
+        TextSettings.Font.Size = 10.000000000000000000
+        OnClick = btnTabHomeClick
+      end
+      object btnTabProducts: TSpeedButton
+        Align = Client
+        Size.Width = 72.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Produits'
+        TextSettings.Font.Size = 10.000000000000000000
+        OnClick = btnTabProductsClick
+      end
+      object btnTabScanner: TSpeedButton
+        Align = Client
+        Size.Width = 72.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Scanner'
+        TextSettings.Font.Size = 10.000000000000000000
+        OnClick = btnTabScannerClick
+      end
+      object btnTabCart: TSpeedButton
+        Align = Client
+        Size.Width = 72.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Panier'
+        TextSettings.Font.Size = 10.000000000000000000
+        OnClick = btnTabCartClick
+      end
+      object btnTabQuote: TSpeedButton
+        Align = Client
+        Size.Width = 72.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Devis'
+        TextSettings.Font.Size = 10.000000000000000000
+        OnClick = btnTabQuoteClick
+      end
+    end
+    object rectNavDivider: TRectangle
+      Align = Top
+      Fill.Color = claGainsboro
+      HitTest = False
+      Size.Width = 360.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+  end
+  object layViewContainer: TLayout
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 602.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+end
